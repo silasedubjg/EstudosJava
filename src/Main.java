@@ -6,12 +6,20 @@ public class Main {
         // IntelliJ IDEA suggests fixing it.
         System.out.printf("Hello and welcome!");
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
-
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+        DesafioTemperatura();
     }
+
+
+
+        static void DesafioTemperatura() {
+            double tempCelsius = 100;
+            double tempFahrenheit = (tempCelsius * 1.8) + 32;
+
+            String newtemp = String.format("A temperatura de %f Celsius é equivalente a %f Fahrenheit", tempCelsius, tempFahrenheit);
+            System.out.println(newtemp);
+
+        }
+
+
 }
+
